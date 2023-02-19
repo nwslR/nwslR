@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# nwslR
+# nwslR <img src='man/figures/nwslR.png' align="right" height="139" />
 
 <!-- badges: start -->
 
@@ -13,13 +13,16 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 `nwslR` is an R ecosystem that contains datasets and analysis
 functionality for the National Women’s Soccer League (NWSL). Founded in
 2013, the NWSL is the United States’ top professional women’s soccer
-league, featuring players from all over the world.
+league, featuring players from all over the world.In an effort to create
+a reproducible and friendly ecosystem, the setup is heavily inspired by
+the [nflverse](https://github.com/nflverse). Many thanks to [Tan
+Ho](https://github.com/tanho63) for all his help and advice.
 
 Accessibility of data in women’s sports (and particularly soccer) lags
 behind its male counterparts. This package is on contribution to a
 growing ecosystem of open data sources that aims to make data available
 to fans and analysts of the league. The main package, `nwslR`, provides
-functions to data easily access data that is loaded in the [nwsldata
+functions to easily access data that is loaded in the [nwsldata
 repo](https://github.com/nwslR/nwsldata). Data is updated several times
 a week during the season and more sporadically in the offseason.
 
