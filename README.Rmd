@@ -7,7 +7,7 @@ output: github_document
 # nwslR
 
 <!-- badges: start -->
-[[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) ![R-CMD-check](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![R-CMD-check](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `nwslR` is an R ecosystem that contains datasets and analysis functionality for the National Women’s Soccer League (NWSL). Founded in 2013, the NWSL is the United States’ top professional women’s soccer league, featuring players from all over the world.
@@ -23,7 +23,7 @@ This package is currently in the process of changing and updating significantly,
 
 You can install the development version of nwslR from [GitHub](https://github.com/) with:
 
-``` {r}
+``` {r eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("nwslR/nwslR", 
                          ref = "adror1/build_first_draft")
@@ -38,7 +38,7 @@ library(nwslR)
 ## basic example code
 ```
 
-## Available Tables
+## Available Table Types
 
 - `load_player_match_stats()`: Loads player level stats for a given match
 - `load_player_season_stats()`: Loads player level stats for a team/season
@@ -46,8 +46,7 @@ library(nwslR)
 - `load_team_season_stats()`: Loads team level stats for a team/season
 
 
-# Example::
+# Example:
 ```{r}
-#head(load_player_match_stats("angel-city-fc-vs-racing-louisville-fc-2022-09-25"))
-```
+head(load_player_match_stats("angel-city-fc-vs-racing-louisville-fc-2022-09-25"))
 ```

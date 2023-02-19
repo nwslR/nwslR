@@ -5,9 +5,9 @@
 
 <!-- badges: start -->
 
-[\[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)\](https://www.tidyverse.org/lifecycle/#experimental)
-![R-CMD-check](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![R-CMD-check](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nwslR/nwslR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `nwslR` is an R ecosystem that contains datasets and analysis
@@ -44,19 +44,6 @@ devtools::install_github("nwslR/nwslR",
                          ref = "adror1/build_first_draft")
 ```
 
-    ## Downloading GitHub repo nwslR/nwslR@adror1/build_first_draft
-
-    ## ── R CMD build ─────────────────────────────────────────────────────────────────
-    ##      checking for file ‘/private/var/folders/7f/s955xds17_j5tlf00q1wy6br0000gn/T/RtmpBz79C3/remotesfcea22ef641d/nwslR-nwslR-4f6d528/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/7f/s955xds17_j5tlf00q1wy6br0000gn/T/RtmpBz79C3/remotesfcea22ef641d/nwslR-nwslR-4f6d528/DESCRIPTION’
-    ##   ─  preparing ‘nwslR’:
-    ##      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-    ##   ─  checking for LF line-endings in source and make files and shell scripts
-    ##   ─  checking for empty or unneeded directories
-    ##    Omitted ‘LazyData’ from DESCRIPTION
-    ##   ─  building ‘nwslR_0.1.0.tar.gz’
-    ##      
-    ## 
-
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
@@ -66,7 +53,7 @@ library(nwslR)
 ## basic example code
 ```
 
-## Available Tables
+## Available Table Types
 
 - `load_player_match_stats()`: Loads player level stats for a given
   match
@@ -75,10 +62,25 @@ library(nwslR)
 - `load_team_match_stats()`: Loads team level stats for a given match
 - `load_team_season_stats()`: Loads team level stats for a team/season
 
-# Example::
+# Example:
 
 ``` r
-#head(load_player_match_stats("angel-city-fc-vs-racing-louisville-fc-2022-09-25"))
+head(load_player_match_stats("angel-city-fc-vs-racing-louisville-fc-2022-09-25"))
 ```
 
-\`\`\`
+    ## # A tibble: 6 × 187
+    ##   match_id       team_id playe…¹ long_…² passe…³ saves…⁴ passe…⁵ passe…⁶ long_…⁷
+    ##   <chr>            <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>   <dbl>
+    ## 1 angel-city-fc…      15     229       5       8       2      32      19       1
+    ## 2 angel-city-fc…      15     559       1      20       0      41      21       3
+    ## 3 angel-city-fc…      15     152       5      23       0      55      40       9
+    ## 4 angel-city-fc…      15     618       1      11       0      31      15       3
+    ## 5 angel-city-fc…      15     185       0      10       0      13       9       1
+    ## 6 angel-city-fc…      15     174       1      12       0      19       9       3
+    ## # … with 178 more variables: passes_leftside_opposition_half_total <dbl>,
+    ## #   loss_of_possession_no_clearance <dbl>,
+    ## #   passes_to_left_wing_opposition_half_total <dbl>, total_chipped_pass <dbl>,
+    ## #   saves <dbl>, entries_final_third <dbl>, launches_total <dbl>,
+    ## #   penalties_faced <dbl>, clearances_successful <dbl>,
+    ## #   passes_final_third_total <dbl>, clearances_total <dbl>,
+    ## #   sweeper_keeper_accurate <dbl>, possession_won_defensive_3rd <dbl>, …
