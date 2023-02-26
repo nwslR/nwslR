@@ -1,8 +1,9 @@
 Package: nwslR
 Title: Compiles dataset for the National Women's Soccer League (NWSL)
 Version: 0.0.0.9000
-Authors@R: 
-    person("Arielle", "Dror", email = "arielle.dror@gmail.com", role = c("aut", "cre"))
+Authors@R: c(
+    person("Arielle", "Dror", email = "arielle.dror@gmail.com", role = c("aut", "cre")), 
+    person("Tan", "Ho", email = "tan@tanho.ca", role = c("ctb")))
 Description: nwslR is an R package that allows users to access datasets for the National Women’s Soccer League (NWSL). Founded in 2013, the NWSL is the United States’ top professional women’s soccer league, featuring players from all over the world.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -11,5 +12,5 @@ RoxygenNote: 7.2.3
 Depends: R (>= 3.6.0)
 Imports: 
     glue,
-    readr,
+    readr (>= 2.0.0),
     stringr
