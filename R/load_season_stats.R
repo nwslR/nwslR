@@ -8,7 +8,7 @@
 #' @examples
 #' \donttest{
 #' season <- load_player_season_stats(team_id = "POR", season = "2022")
-#' short_season <- load_player_season_stats(team_id = "POR", season = "2022 Challenge Cup")
+#' short_season <- load_player_season_stats(team_id = "POR", season = "2022_NWSL_Challenge_Cup")
 #' }
 #'
 #' @seealso See \code{load_metrics} for information about returned metrics. Not all
@@ -21,7 +21,7 @@ load_player_season_stats <- function(team_id = available_teams(),
                                      season = available_seasons()) {
 
   team_id <- match.arg(team_id)
-  season = match.arg(season)
+  season <- match.arg(season)
 
   # * Pull match if exists
   url <- glue::glue("https://github.com/nwslR/nwsldata/releases/download/player_season_summaries/{team_id}_{season}.csv")
@@ -40,7 +40,7 @@ load_player_season_stats <- function(team_id = available_teams(),
 #' @examples
 #' \donttest{
 #' season <- load_team_season_stats(team_id = "POR", season = "2022")
-#' short_season <- load_team_season_stats(team_id = "POR", season = "2022 Challenge Cup")
+#' short_season <- load_team_season_stats(team_id = "POR", season = "2022_NWSL_Challenge_Cup")
 #' }
 #'
 #' @seealso See \code{load_metrics} for information about returned metrics. Not all

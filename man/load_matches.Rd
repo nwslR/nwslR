@@ -13,5 +13,5 @@ w/ match IDs
 \note{
 Most, but not all, matches in table have associated stats that you can
 pull by feeding match ID into \code{load_player_match_stats} or
-\code{load_team_match_stats}
+\code{load_team_match_stats}. Match start times are EST times.
 }

@@ -23,7 +23,7 @@ Loads player level season stats for a given team ID/season
 \examples{
 \donttest{
 season <- load_player_season_stats(team_id = "POR", season = "2022")
-short_season <- load_player_season_stats(team_id = "POR", season = "2022 Challenge Cup")
+short_season <- load_player_season_stats(team_id = "POR", season = "2022_NWSL_Challenge_Cup")
 }
 
 }
