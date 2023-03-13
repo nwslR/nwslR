@@ -17,11 +17,11 @@
 #' @source \url{www.nwslsoccer.com}
 #'
 #' @export
-load_player_season_stats <- function(team_id = available_teams(),
-                                     season = available_seasons()) {
+load_player_season_stats <- function(team_id,
+                                     season) {
 
-  team_id <- match.arg(team_id)
-  season <- match.arg(season)
+  team_id <- match.arg(team_id, available_teams())
+  season <- match.arg(season, available_seasons())
 
   # * Pull match if exists
   url <- glue::glue("https://github.com/nwslR/nwsldata/releases/download/player_season_summaries/{team_id}_{season}.csv")
@@ -49,11 +49,11 @@ load_player_season_stats <- function(team_id = available_teams(),
 #' @source \url{www.nwslsoccer.com}
 #'
 #' @export
-load_team_season_stats <- function(team_id = available_teams(),
-                                     season = available_seasons()) {
+load_team_season_stats <- function(team_id,
+                                   season) {
 
-  team_id <- match.arg(team_id)
-  season = match.arg(season)
+  team_id <- match.arg(team_id, available_teams())
+  season = match.arg(season, available_seasons())
 
   # * Pull match if exists
   url <- glue::glue("https://github.com/nwslR/nwsldata/releases/download/team_season_summaries/{team_id}_{season}.csv")

@@ -15,12 +15,16 @@
 #' @source \url{www.nwslsoccer.com}
 #'
 #' @export
-load_player_match_stats <- function(match_id) {
+load_player_match_stats <- function(match_id = c()) {
+
+  if(length(match_id) < 1){
+    stop("Argument 'match_id' is missing, with no default. Please select a match from load_matches().")
+  }
 
   # * Check -- Does match exist?
   matches <- load_matches()
 
-  does_match_exist <-match_id %in% unique(matches$match_id)
+  does_match_exist <- match_id %in% unique(matches$match_id)
 
   if(!does_match_exist == TRUE){
     stop("Error: Match does not exist! Please make sure you are using the correct Match ID.")
@@ -50,7 +54,12 @@ load_player_match_stats <- function(match_id) {
 #' @source \url{www.nwslsoccer.com}
 #'
 #' @export
-load_team_match_stats <- function(match_id) {
+load_team_match_stats <- function(match_id = c()) {
+
+  if(length(match_id) < 1){
+    stop("Argument 'match_id' is missing, with no default. Please select a match from load_matches().")
+  }
+
   matches <- load_matches()
 
   does_match_exist <- match_id %in% unique(matches$match_id)

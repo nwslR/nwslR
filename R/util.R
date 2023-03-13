@@ -24,7 +24,11 @@ read_nwsl_data <- function(url) {
   )
 }
 
-
+#' All available seasons
+#'
+#' All available season names to pull data
+#'
+#' @export
 available_seasons <- function() {
   c(
     "2016",
@@ -40,6 +44,11 @@ available_seasons <- function() {
   )
 }
 
+#' All available teams
+#'
+#' All available team abbreviations to pull data
+#'
+#' @export
 available_teams <- function() {
   c(
     "BOS",
