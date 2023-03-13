@@ -7,7 +7,7 @@
 \url{www.nwslsoccer.com}
 }
 \usage{
-load_player_match_stats(match_id)
+load_player_match_stats(match_id = c())
 }
 \arguments{
 \item{match_id}{match id available from \code{load_matches()}}

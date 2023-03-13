@@ -7,10 +7,7 @@
 \url{www.nwslsoccer.com}
 }
 \usage{
-load_team_season_stats(
-  team_id = available_teams(),
-  season = available_seasons()
-)
+load_team_season_stats(team_id, season)
 }
 \arguments{
 \item{team_id}{team_id available from \code{available_teams()}}
