@@ -40,9 +40,7 @@ available_seasons <- function() {
     "2021_NWSL_Challenge_Cup",
     "2021",
     "2022_NWSL_Challenge_Cup",
-    "2022",
-    "2023",
-    "2023_NWSL_Challenge_Cup"
+    "2022"
   )
 }
 
