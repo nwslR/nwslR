@@ -1,6 +1,6 @@
 Package: nwslR
 Title: Compiles dataset for the National Women's Soccer League (NWSL)
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: c(
     person("Arielle", "Dror", email = "arielle.dror@gmail.com", role = c("aut", "cre")), 
     person("Tan", "Ho", email = "tan@tanho.ca", role = c("ctb")))
