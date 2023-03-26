@@ -53,7 +53,7 @@ knitr::opts_chunk$set(
 ``` r
 # install.packages("devtools")
 devtools::install_github("nwslR/nwslR", 
-                         ref = "v0.0.0.9001")
+                         ref = "v0.0.0.9002")
 ```
 
 ## Available Table Types
