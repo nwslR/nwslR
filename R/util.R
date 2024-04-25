@@ -42,7 +42,9 @@ available_seasons <- function() {
     "2022_NWSL_Challenge_Cup",
     "2022",
     "2023",
-    "2023_NWSL_Challenge_Cup"
+    "2023_NWSL_Challenge_Cup",
+    "2024",
+    "2024_NWSL_Challenge_Cup"
   )
 }
 
@@ -68,6 +70,7 @@ available_teams <- function() {
     "KCC",
     "LOU",
     "LA",
-    "SD"
+    "SD",
+    "BAY"
   )
 }
